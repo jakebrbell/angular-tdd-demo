@@ -1,0 +1,15 @@
+{
+  "name": "angular-tdd-demo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Bell <jakebrbell@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1"
+  }
+}
