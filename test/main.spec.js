@@ -1,7 +1,7 @@
 'use strict';
 
-describe('The Address Book App', () => {
-  it('should work', () => {
+describe('The Address Book App', function() {
+  it('should work', function() {
     chai.assert.isArray([]);
   });
 });

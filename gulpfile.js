@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
+const karma = require('karma').server;
 
 gulp.task('serve', () => {
   browserSync.init({
@@ -17,6 +18,13 @@ gulp.task('serve', () => {
 
   gulp.watch(['app/**/*.*'])
     .on('change', browserSync.reload);
+});
+
+gulp.task('test-browser', () => {
+  karma.start({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  });
 });
 
 gulp.task('serve-test', () => {
